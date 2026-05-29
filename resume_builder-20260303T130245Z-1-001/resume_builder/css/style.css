@@ -1,0 +1,141 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body{
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
+   padding: 20px;
+}
+
+/* MAIN CONTAINER */
+.container{
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* FORM SIDE */
+.form{
+   background: #f0f6ff;
+   padding: 25px;
+   width: 360px;
+   border-radius: 12px;
+   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.form h2{
+   text-align: center;
+   margin-bottom: 20px;
+   color: #1e3c72;
+}
+
+.box{
+   margin-bottom: 15px;
+}
+
+.box label{
+   font-weight: bold;
+   display: block;
+   margin-bottom: 5px;
+   color: #1e3c72;
+}
+
+.box input,
+.box textarea{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   background: white;
+}
+
+/* BUTTONS */
+button{
+   padding: 7px 14px;
+   margin-top: 5px;
+   border: none;
+   background: #1e3c72;
+   color: white;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+button:hover{
+   background: #16305a;
+}
+
+.download-btn{
+   width: 100%;
+   margin-top: 15px;
+   font-weight: bold;
+}
+
+/* RESUME PREVIEW SIDE */
+.preview{
+   background: white;
+   padding: 30px;
+   max-width: 794px;
+   width: 100%;
+   border-radius: 12px;
+   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* HEADER */
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 25px;
+}
+
+.header h2{
+   color: #1e3c72;
+}
+
+.header p{
+   color: #333;
+}
+
+/* PHOTO */
+.photo{
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   background: #e0e7ff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   font-weight: bold;
+   color: #1e3c72;
+}
+
+/* SECTIONS */
+.section{
+   margin-bottom: 20px;
+}
+.section h3{
+   border-bottom: 3px solid #1e3c72;
+   padding-bottom: 5px;
+   margin-bottom: 8px;
+   color: #1e3c72;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:900px){
+   .container{
+      flex-direction: column;
+      align-items: center;
+   }
+}
+.section h3,
+.section,
+.preview hr {
+   border: none !important;
+   border-bottom: none !important;
+}
